@@ -11,12 +11,30 @@
   </head>
 
   <body>
-    <h1>B L U E M A R T I N E Z</h1>
+    <h1>BLUE MARTINEZ</h1>
 
-    <a href="#menu" class="box-shadow-menu">
-     
-    </a>
+    <a href="#menu" class="box-shadow-menu"> </a>
 
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="/About.html">About</a>
+          <a href="/Discography.html">Discography</a>
+          <a href="/Picture.html">Pictures</a>
+          <a href="/Contact.html">Contact</a>
+        </div>
+      </div>
 
+    <span id="span" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
   </body>
 </html>
